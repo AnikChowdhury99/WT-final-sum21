@@ -1,20 +1,26 @@
-<?php
-    include 'controllers/userController.php';
+<?php 
+	  include 'main_header.php';
+	  include 'controllers/UserController.php';
 ?>
 
-<html>
-<head>
-    <title>Log-in</title>
-</head>
-<body>
-    <h2>Log-in</h2>
-    <h5><?php echo $err_db; ?></h5>
-    <form action="" method="post">
-    Username:<input type="text" name="username" value="<?php echo $username;?>" >
-    <span><?php echo $err_username;?></span> <br><br>
-    Password:<input type="text" name="pass" >
-    <span><?php echo $err_pass;?></span> <br><br>
-    <input type="submit" name="log_in" value="Log-in">
-    </form>
-</body>
-</html>
+	<h1 >Login</h1>
+	<h5 ><?php echo $err_db;?></h5>
+	<form action="" method="post" >
+	
+			<h4 >Username</h4> 
+			<input type="text" name="uname" value="<?php echo $uname;?> ">
+			<span ><?php echo $err_uname;?></span>
+	
+			<h4 >Password</h4> 
+			<input type="password" name ="pass" value ="<?php echo $pass;?>" >
+            <span ><?php echo $err_pass;?></span>
+		
+
+
+			<input type="submit" name="btn_login" value="Login" >
+	
+			<a href="signup.php" >Not registered yet? Sign Up</a>
+		
+	</form>
+
+<?php include 'main_footer.php';?>

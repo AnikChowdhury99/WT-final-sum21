@@ -2,7 +2,7 @@
 	$db_server="localhost";
 	$db_uname="root";
 	$db_pass="";
-	$db_name="labtask";
+	$db_name="webtech_sum21_final";
 	
 	
 	function execute($query){ 
