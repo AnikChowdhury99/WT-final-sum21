@@ -2,7 +2,7 @@
 $db_server = "localhost";
 $db_uname = "root";
 $db_pass = "";
-$db_name = "webtexh_sum21_final";
+$db_name = "webtech_sum21_final";
 
 function execute($query)
 { // insert,update,delete
